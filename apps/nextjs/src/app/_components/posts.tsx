@@ -1,7 +1,6 @@
 "use client";
 
 import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
 import { cn } from "@acme/ui";
 import { Button } from "@acme/ui/button";
 import {
@@ -19,13 +18,17 @@ import {
   useQueryClient,
   useSuspenseQuery,
 } from "@tanstack/react-query";
+import { z } from "zod/v4";
 
 import { useTRPC } from "~/trpc/react";
 
 export function CreatePostForm() {
   const trpc = useTRPC();
   const form = useForm({
-    schema: CreatePostSchema,
+    schema: z.object({
+      title: z.string().min(1),
+      content: z.string().min(1),
+    }),
     defaultValues: {
       content: "",
       title: "",

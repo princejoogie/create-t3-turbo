@@ -5,42 +5,32 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./src/index.ts",
       "default": "./src/index.ts"
-    },
-    "./client": {
-      "types": "./dist/client.d.ts",
-      "default": "./src/client.ts"
-    },
-    "./schema": {
-      "types": "./dist/schema.d.ts",
-      "default": "./src/schema.ts"
     }
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "prisma generate",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "tsc",
+    "dev": "prisma generate --watch",
     "format": "biome format",
     "lint": "biome lint",
     "check": "biome check",
-    "push": "pnpm with-env drizzle-kit push",
-    "studio": "pnpm with-env drizzle-kit studio",
+    "push": "prisma db push",
+    "studio": "prisma studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
-    "with-env": "dotenv -e ../../.env --"
+    "with-env": "dotenv -e ../../.env --",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "drizzle-orm": "^0.44.2",
-    "drizzle-zod": "^0.8.2",
-    "pg": "^8.16.1",
-    "zod": "catalog:"
+    "@prisma/client": "^6.10.1"
   },
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
     "@types/pg": "^8.15.4",
     "dotenv-cli": "^8.0.0",
-    "drizzle-kit": "^0.31.1",
+    "prisma": "^6.10.1",
     "typescript": "catalog:"
   }
 }

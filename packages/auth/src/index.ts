@@ -1,8 +1,8 @@
-import { db } from "@acme/db/client";
+import { prisma } from "@acme/db";
 import { expo } from "@better-auth/expo";
 import type { BetterAuthOptions } from "better-auth";
 import { betterAuth } from "better-auth";
-import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { prismaAdapter } from "better-auth/adapters/prisma";
 import { oAuthProxy } from "better-auth/plugins";
 
 export function initAuth(options: {
@@ -14,8 +14,8 @@ export function initAuth(options: {
   discordClientSecret: string;
 }) {
   const config = {
-    database: drizzleAdapter(db, {
-      provider: "pg",
+    database: prismaAdapter(prisma, {
+      provider: "postgresql",
     }),
     baseURL: options.baseUrl,
     secret: options.secret,

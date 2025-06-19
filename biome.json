@@ -12,6 +12,7 @@
       "!**/.git/**",
       "!**/node_modules/**",
       "!**/dist/**",
+      "!**/generated/**",
       "!**/build/**",
       "!**/out/**",
       "!**/output/**",
