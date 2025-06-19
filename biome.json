@@ -6,7 +6,19 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": [
+			"**",
+			"!**/.git/**",
+			"!**/node_modules/**",
+			"!**/dist/**",
+			"!**/build/**",
+			"!**/out/**",
+			"!**/output/**",
+			"!**/.cache/**",
+			"!**/.next/**",
+			"!**/.turbo/**"
+		]
 	},
 	"formatter": {
 		"enabled": true,
