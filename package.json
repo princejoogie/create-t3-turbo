@@ -18,7 +18,7 @@
     "format": "turbo run format --continue",
     "format:fix": "turbo run format --continue -- --write",
     "lint": "turbo run lint --continue",
-    "lint:fix": "turbo run lint --continue -- --apply",
+    "lint:fix": "turbo run lint --continue -- --write",
     "lint:ws": "pnpm dlx sherif@latest",
     "postinstall": "pnpm lint:ws",
     "typecheck": "turbo run typecheck",
@@ -27,6 +27,7 @@
     "ios": "expo run:ios"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.0.0",
     "@turbo/gen": "^2.5.4",
     "turbo": "^2.5.4",
     "typescript": "catalog:"
