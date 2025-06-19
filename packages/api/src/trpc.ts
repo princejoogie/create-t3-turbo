@@ -8,7 +8,7 @@
  */
 
 import type { Auth } from "@acme/auth";
-import { type PrismaClient, prisma } from "@acme/db";
+import { prisma } from "@acme/db";
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError, z } from "zod/v4";
@@ -37,7 +37,7 @@ export const createTRPCContext = async (opts: {
   return {
     authApi,
     session,
-    db: prisma as PrismaClient,
+    db: prisma,
   };
 };
 /**
