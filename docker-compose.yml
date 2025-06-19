@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres
+    container_name: acme-postgres
+    environment:
+      POSTGRES_DB: acme-postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "2345:5432"
+
+volumes:
+  postgres_data:

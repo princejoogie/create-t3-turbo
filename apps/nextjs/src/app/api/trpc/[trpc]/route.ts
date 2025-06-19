@@ -34,7 +34,8 @@ const handler = async (req: NextRequest) => {
         headers: req.headers,
       }),
     onError({ error, path }) {
-      console.error(`>>> tRPC Error on '${path}'`, error);
+      console.error(`>>> tRPC Error on '${path}'`);
+      console.dir(error, { depth: Infinity });
     },
   });
 
