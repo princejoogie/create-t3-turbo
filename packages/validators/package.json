@@ -14,8 +14,8 @@
     "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "tsc",
-    "format": "echo 'TODO: format'",
-    "lint": "echo 'TODO: lint'",
+    "format": "biome format",
+    "lint": "biome lint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
