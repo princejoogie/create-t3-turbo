@@ -20,6 +20,8 @@
     "lint": "turbo run lint --continue",
     "lint:fix": "turbo run lint --continue -- --write",
     "lint:ws": "pnpm dlx sherif@latest",
+    "check": "turbo run check --continue",
+    "check:fix": "turbo run check --continue -- --write",
     "postinstall": "pnpm lint:ws",
     "typecheck": "turbo run typecheck",
     "ui-add": "turbo run ui-add"

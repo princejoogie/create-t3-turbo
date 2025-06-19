@@ -24,6 +24,7 @@
     "dev": "tsc",
     "format": "biome format",
     "lint": "biome lint",
+    "check": "biome check",
     "push": "pnpm with-env drizzle-kit push",
     "studio": "pnpm with-env drizzle-kit studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",

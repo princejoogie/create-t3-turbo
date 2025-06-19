@@ -16,6 +16,7 @@
     "dev": "tsc",
     "format": "biome format",
     "lint": "biome lint",
+    "check": "biome check",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {

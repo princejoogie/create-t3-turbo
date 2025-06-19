@@ -9,6 +9,7 @@
     "dev": "pnpm with-env next dev --turbopack",
     "format": "biome format",
     "lint": "biome lint",
+    "check": "biome check",
     "start": "pnpm with-env next start",
     "typecheck": "tsc --noEmit",
     "with-env": "dotenv -e ../../.env --"

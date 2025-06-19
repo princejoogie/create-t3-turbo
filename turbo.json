@@ -22,6 +22,10 @@
       "dependsOn": ["^topo", "^build"],
       "outputs": []
     },
+    "check": {
+      "dependsOn": ["^topo", "^build"],
+      "outputs": []
+    },
     "typecheck": {
       "dependsOn": ["^topo", "^build"],
       "outputs": [".cache/tsbuildinfo.json"]
