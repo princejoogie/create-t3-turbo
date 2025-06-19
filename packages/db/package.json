@@ -17,8 +17,8 @@
     "format": "biome format",
     "lint": "biome lint",
     "check": "biome check",
-    "push": "prisma db push",
-    "studio": "prisma studio",
+    "push": "pnpm with-env prisma db push",
+    "studio": "pnpm with-env prisma studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
     "with-env": "dotenv -e ../../.env --",
     "postinstall": "prisma generate"

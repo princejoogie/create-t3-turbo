@@ -25,3 +25,4 @@ onlyBuiltDependencies:
   - bufferutil
   - esbuild
   - prisma
+  - sharp

@@ -96,15 +96,7 @@ export function PostList() {
 
   if (posts.length === 0) {
     return (
-      <div className="relative flex w-full flex-col gap-4">
-        <PostCardSkeleton pulse={false} />
-        <PostCardSkeleton pulse={false} />
-        <PostCardSkeleton pulse={false} />
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/10">
-          <p className="font-bold text-2xl text-white">No posts yet</p>
-        </div>
-      </div>
+      <p className="text-center font-bold text-2xl text-white">No posts yet</p>
     );
   }
 
