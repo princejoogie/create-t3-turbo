@@ -1,14 +1,13 @@
 "use client";
 
-import type * as React from "react";
+import { cn } from "@acme/ui";
 import {
   CheckIcon,
   ChevronRightIcon,
   DotFilledIcon,
 } from "@radix-ui/react-icons";
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
-
-import { cn } from "@acme/ui";
+import type * as React from "react";
 
 export const DropdownMenu = DropdownMenuPrimitive.Root;
 export const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger;

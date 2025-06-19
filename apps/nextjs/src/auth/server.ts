@@ -1,9 +1,8 @@
 import "server-only";
 
-import { cache } from "react";
-import { headers } from "next/headers";
-
 import { initAuth } from "@acme/auth";
+import { headers } from "next/headers";
+import { cache } from "react";
 
 import { env } from "~/env";
 
