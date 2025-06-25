@@ -2,6 +2,7 @@ packages:
   - apps/*
   - packages/*
   - tooling/*
+  - infra/
 
 catalog:
   tailwindcss: ^3.4.15
@@ -22,6 +23,7 @@ catalogs:
 onlyBuiltDependencies:
   - '@prisma/client'
   - '@prisma/engines'
+  - aws-sdk
   - bufferutil
   - esbuild
   - prisma
