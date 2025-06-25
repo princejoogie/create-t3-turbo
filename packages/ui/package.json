@@ -16,9 +16,6 @@
   "license": "MIT",
   "scripts": {
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "format": "biome format",
-    "lint": "biome lint",
-    "check": "biome check",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
     "ui-add": "pnpm dlx shadcn@latest add && echo 'TODO: format'"
   },

@@ -14,9 +14,6 @@
     "build": "prisma generate",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "dev": "prisma generate --watch",
-    "format": "biome format",
-    "lint": "biome lint",
-    "check": "biome check",
     "push": "pnpm with-env prisma db push",
     "studio": "pnpm with-env prisma studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
@@ -33,5 +30,8 @@
     "dotenv-cli": "^8.0.0",
     "prisma": "^6.10.1",
     "typescript": "catalog:"
+  },
+  "prisma": {
+    "schema": "prisma/schema"
   }
 }
