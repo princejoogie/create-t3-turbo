@@ -10,7 +10,7 @@
       "outputs": [
         ".cache/tsbuildinfo.json",
         "dist/**",
-        "node_modules/@prisma/client"
+        "../../node_modules/@prisma/client/**"
       ]
     },
     "dev": {

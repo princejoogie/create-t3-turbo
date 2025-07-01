@@ -54,3 +54,4 @@ yarn-error.log*
 .sst
 sst-env.d.ts
 .open-next
+.pnpm-store
