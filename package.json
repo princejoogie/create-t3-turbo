@@ -22,7 +22,7 @@
     "ui-add": "turbo run ui-add"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.0",
+    "@biomejs/biome": "^2.0.6",
     "dotenv-cli": "^8.0.0",
     "turbo": "^2.5.4",
     "typescript": "catalog:"

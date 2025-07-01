@@ -5,17 +5,16 @@
 
 declare module "sst" {
   export interface Resource {
-    "nextjs": {
-      "type": "sst.aws.Nextjs"
-      "url": string
-    }
-    "router": {
-      "type": "sst.aws.Router"
-      "url": string
-    }
+    nextjs: {
+      type: "sst.aws.Nextjs";
+      url: string;
+    };
+    router: {
+      type: "sst.aws.Router";
+      url: string;
+    };
   }
 }
 /// <reference path="sst-env.d.ts" />
 
-import "sst"
-export {}
+import "sst";
