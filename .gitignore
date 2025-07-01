@@ -52,4 +52,5 @@ yarn-error.log*
 # turbo
 **/.turbo/**
 .sst
+sst-env.d.ts
 .open-next
